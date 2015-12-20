@@ -20,8 +20,9 @@ SystemPackage.register(function(app, auth, database, circles) {
   SystemPackage.routes(app, auth, database);
 
   SystemPackage.aggregateAsset('css', 'common.css');
+  SystemPackage.aggregateAsset('css', 'home.css');
   SystemPackage.angularDependencies(['ui.router', 'mean-factory-interceptor']);
-  
+
 
   // The middleware in config/express will run before this code
 

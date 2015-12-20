@@ -4,19 +4,29 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
   function($scope, Global) {
     $scope.global = Global;
     $scope.sites = {
-      'makeapoint':{
-        'name':'makeapoint',
-        'text':'Makeapoint is a platform to craft and fine-tune ideas and messages providing a graphical experience which brough an offline methodlogy online',
-        'author':'Linnovate',
-        'link':'http://www.linnovate.net',
-        'image':'/theme/assets/img/makeapoint.png'
+      'photos':{
+        'name':'Photos & Places',
+        'text':'Photos & Places.',
+        'author':'Josh Silverman',
+        'image':'/system/assets/img/travel.jpg'
       },
-      'cactus':{
-        'name':'Cactus Intranet',
-        'text':'Cactus Intranet is an enterprise social network with features like real-time newsfeed, notifications, groups, events, polls, referral system etc. The system has role based permission system, allowing different stakeholders access and controls relevant to them.',
-        'author':'QED42',
-        'link':'http://www.qed42.com',
-        'image':'/theme/assets/img/cactus.png'
+      'me':{
+        'name':'Me',
+        'text':'Me',
+        'author':'Josh Silverman',
+        'image':'/system/assets/img/me2.jpg'
+      },
+      'wisr':{
+        'name':'Wisr.com',
+        'text':'Wisr.com',
+        'author':'Zendo Labs, Inc.',
+        'image':'/system/assets/img/wisr2.png'
+      },
+      'books':{
+        'name':'Books',
+        'text':'Books',
+        'author':'Various',
+        'image':'/system/assets/img/books.jpg'
       }
     };
     $scope.packages = {

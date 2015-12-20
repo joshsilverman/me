@@ -1,0 +1,58 @@
+body {
+}
+
+.content {
+    /*background-color: pink;*/
+    margin-top: 0px;
+}
+
+.container {
+    /*background-color: blue;*/
+    width: 100%;
+    /*padding:0px;*/
+}
+
+.projects {
+    /*background-color: green;*/
+}
+
+.welcome {
+  /*padding: 0px !important;*/
+  /*margin:0px !important;*/
+}
+
+.welcome .row {
+  /*margin: 0px;*/
+  background-color: white;
+}
+
+.welcome .row .col-md-4 {
+  /*height:317px;*/
+  padding:0px;
+  overflow-y: hidden;
+}
+
+.welcome .row .col-md-4 .big-icon {
+  margin:7px 3%;
+  background-color: #f3f3f3;
+  max-height:295px;
+  width:94%;
+}
+
+.welcome .row .col-md-4 img {
+  max-width:100%;
+  opacity:0.0;
+  filter:alpha(opacity=0);
+  cursor: pointer;
+}
+
+.welcome .row .col-md-4:hover img {
+  visibility:visible;
+  opacity:1.0;
+  filter:alpha(opacity=100);/*position where
+  enlarged image should offset horizontally */
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
