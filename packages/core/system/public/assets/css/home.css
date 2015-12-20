@@ -9,7 +9,7 @@ body {
 .container {
     /*background-color: blue;*/
     width: 100%;
-    /*padding:0px;*/
+    padding:0px;
 }
 
 .projects {
@@ -19,6 +19,8 @@ body {
 .welcome {
   /*padding: 0px !important;*/
   /*margin:0px !important;*/
+  font-family: open sans;
+  font-weight: 700;
 }
 
 .welcome .row {
@@ -37,19 +39,45 @@ body {
   background-color: #f3f3f3;
   max-height:295px;
   width:94%;
+  position: relative;
+}
+
+.welcome .row .col-md-4 .big-icon.photos { background-color: #b8d6ff; }
+.welcome .row .col-md-4 .big-icon.me { background-color: #b1aaa3; }
+.welcome .row .col-md-4 .big-icon.projects { background-color: #8bb1c2; }
+.welcome .row .col-md-4 .big-icon.books { background-color: #e49489; }
+.welcome .row .col-md-4 .big-icon.map { background-color: #52c47d; }
+.welcome .row .col-md-4 .big-icon.interests { background-color: #9da5f0; }
+
+.welcome .row .col-md-4 .big-icon .title {
+  font-size: 4em;
+  z-index: 0;
+}
+
+.welcome .row .col-md-4 .big-icon .title {
+  position: absolute;
+  /*left: -6px;
+  top: -26px;*/
+  padding-left: 22px;
+  bottom:0;
+  color:#555;
 }
 
 .welcome .row .col-md-4 img {
+  position: relative;
+  z-index: 1;
   max-width:100%;
   opacity:0.0;
-  filter:alpha(opacity=0);
+  /*filter:alpha(opacity=0);*/
   cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
 }
 
 .welcome .row .col-md-4:hover img {
-  visibility:visible;
   opacity:1.0;
-  filter:alpha(opacity=100);/*position where
+  /*filter:alpha(opacity=100);*/
+  /*position where
   enlarged image should offset horizontally */
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
