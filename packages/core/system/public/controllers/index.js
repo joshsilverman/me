@@ -6,33 +6,35 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
     $scope.sites = {
       'photos':{
         'name':'Photos & Places',
-        'text':'Photos & Places.',
         'image':'/system/assets/img/travel2.jpg'
       },
       'me':{
         'name':'Me',
-        'text':'Me',
+        'image':'/system/assets/img/me2.jpg'
+      },
+      'jonemo':{
+        'name':'Jonemo',
         'image':'/system/assets/img/me2.jpg'
       },
       'wisr':{
         'name':'Wisr.com',
-        'text':'Wisr.com',
         'image':'/system/assets/img/wisr2.png'
       },
       'books':{
         'name':'Books',
-        'text':'Books',
         'image':'/system/assets/img/books.jpg'
       },
       'map':{
         'name':'Map',
-        'text':'Map',
         'image':'/system/assets/img/map.gif'
       },
-      'interests':{
+      'timeline':{
         'name':'Interests',
-        'text':'Interests',
-        'image':'/system/assets/img/interests.png'
+        'image':'/system/assets/img/timeline.png'
+      },
+      'transparent':{
+        'name':'',
+        'image':'/system/assets/img/transparent.png'
       }
     };
     $scope.packages = {
