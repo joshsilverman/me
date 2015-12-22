@@ -3,7 +3,7 @@
 angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
   function($scope, Global) {
     $scope.global = Global;
-    $scope.sites = {
+    $scope.icons = {
       'photos':{
         'name':'Photos & Places',
         'image':'/system/assets/img/travel2.jpg'
