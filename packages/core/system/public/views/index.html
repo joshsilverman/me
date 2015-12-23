@@ -1,10 +1,13 @@
 <section class="welcome container-fluid" data-ng-controller="IndexController">
   <div class="Grid Grid--gutters Grid--flexCells">
     <div class="Grid-cell">
-      <div class="big-icon">Full-height, even when my content doesn't fill the space.</div>
+      <div class="big-icon cyan-bg">
+        <img ng-src="{{sites.photos.image}}" />
+      </div>
     </div>
     <div class="Grid-cell">
-      <div class="big-icon">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis velit non gravida venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis velit non gravida venenatis.
+      <div class="big-icon">
+        <img ng-src="{{sites.me.image}}" />
       </div>
     </div>
     <div class="Grid-cell">
@@ -21,14 +24,19 @@
 
   <div class="Grid Grid--gutters Grid--flexCells">
     <div class="Grid-cell">
-      <div class="big-icon">Full-height, even when my content doesn't fill the space.</div>
-    </div>
-    <div class="Grid-cell">
-      <div class="big-icon">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis velit non gravida venenatis.
+      <div class="big-icon">
+        <img ng-src="{{sites.books.image}}" />
       </div>
     </div>
     <div class="Grid-cell">
-      <div class="big-icon">Another</div>
+      <div class="big-icon">
+        <img ng-src="{{sites.interests.image}}" />
+      </div>
+    </div>
+    <div class="Grid-cell">
+      <div class="big-icon">
+        <img ng-src="{{sites.travel.image}}" />
+      </div>
     </div>
   </div
 </section>
