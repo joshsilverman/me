@@ -13,7 +13,7 @@ body { height:100%; }
 
 /* Small to medium screens */
 @media (max-width: 991px) {
-  /*.Grid--flexCells > .Grid-cell { min-width:200px; }*/
+  .Grid, .container, .content { display: block; }
 }
 
 .big-icon {
@@ -23,11 +23,16 @@ body { height:100%; }
 
 .big-icon img { max-width: 100%; }
 
-.big-icon .title {
+.big-icon .title, .small-icon .small-title {
   position: absolute;
   bottom: 0px;
   font-size: 3.7em;
   margin-left: 12px;
+}
+
+.small-icon .small-title {
+  font-size: 1.6em;
+  margin-left: 6px;
 }
 
 .col {
@@ -36,7 +41,13 @@ body { height:100%; }
   flex-direction: column;
 }
 
-.cell { flex:1; }
+.small-icon {
+  flex:1;
+  margin: 0.5em;
+  padding: 0.5em;
+  position: relative;
+  min-height: 80px;
+}
 
 .cyan-bg {background-color: #71e5fb; }
 .purple-bg {background-color: #b882e5; }
