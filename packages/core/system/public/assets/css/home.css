@@ -1,6 +1,19 @@
+body { height:100%; }
+
+.content {
+  height:100%;
+  margin-top: 0px !important;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
 /* Small to medium screens */
-@media (max-width: 500px) {
-  .Grid--flexCells > .Grid-cell { min-width:200px; }
+@media (max-width: 991px) {
+  /*.Grid--flexCells > .Grid-cell { min-width:200px; }*/
 }
 
 .big-icon { width: 100%; }
@@ -15,7 +28,8 @@
 .cell { flex:1; }
 
 .cyan-bg {background-color: #71e5fb; }
-.purple-bg {background-color: #7770fb; }
+.purple-bg {background-color: #b882e5; }
+.blue-bg {background-color: #7770fb; }
 .orange-bg {background-color: #dfaa35; }
 .green-bg {background-color: #97e582; }
 .yellow-bg {background-color: #fffb3b; }
