@@ -18,6 +18,10 @@ Icon
 .settings/
 .*.md.html
 
+# --------------------
+# Photoshop Files
+# --------------------
+*.psd
 
 # --------------------
 # IntelliJ Files
@@ -72,5 +76,3 @@ modules/views/
 # vim Files
 # --------------------
 *.swp
-
-*.psd
