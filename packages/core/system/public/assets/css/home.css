@@ -1,10 +1,12 @@
 /* Small to medium screens */
 @media (max-width: 500px) {
-  .Grid--flexCells > .Grid-cell {
-    /* flex: 10; */
-    min-width:200px;
-    /* width:250px; */
-  }
+  .Grid--flexCells > .Grid-cell { min-width:200px; }
+}
+
+.big-icon {
+  width: 100%;
+  padding: .8em 1em 0;
+  background: rgba(147,128,108,.1);
 }
 
 .col {
