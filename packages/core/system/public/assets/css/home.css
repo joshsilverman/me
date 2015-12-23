@@ -50,4 +50,6 @@ body { height:100%; }
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  -webkit-transform: rotateX(0deg); /* Safari */
+  transform: rotateX(0deg);
 }
