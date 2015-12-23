@@ -16,8 +16,19 @@ body { height:100%; }
   /*.Grid--flexCells > .Grid-cell { min-width:200px; }*/
 }
 
-.big-icon { width: 100%; }
-.big-icon img { max-width: 100%;}
+.big-icon {
+  width: 100%;
+  position: relative;
+}
+
+.big-icon img { max-width: 100%; }
+
+.big-icon .title {
+  position: absolute;
+  bottom: 0px;
+  font-size: 3.7em;
+  margin-left: 12px;
+}
 
 .col {
   flex:1;
