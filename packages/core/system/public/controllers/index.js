@@ -29,23 +29,6 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
         'image':'/system/assets/img/map.gif'
       }
     };
-    $scope.packages = {
-      'gmap':{
-        'name':'gmap',
-        'link':'http://www.qed42.com',
-        'image':'/theme/assets/img/gmap.png'
-      },
-      'upload':{
-        'name':'Upload',
-        'link':'http://www.linnovate.net',
-        'image':'http://cdn.designbyhumans.com/pictures/blog/09-2013/pop-culture-cats/Pop_Culture_Cats_Hamilton_Hipster.jpg'
-      },
-      'socket':{
-        'name':'Socket',
-        'link':'http://www.linnovate.net',
-        'image':'http://cdn.designbyhumans.com/pictures/blog/09-2013/pop-culture-cats/Pop_Culture_Cats_Hamilton_Hipster.jpg'
-      }
-    };
 
     $scope.$watch(function () {
       for (var i = 0; i < $scope.sites.length; i+=1) {
