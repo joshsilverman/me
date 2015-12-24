@@ -45,7 +45,7 @@ body { height:100%; }
   margin: 0.5em;
   padding: 0.5em;
   position: relative;
-  /*min-height: 80px;*/
+  min-height: 4em;
 }
 
 .cyan-bg {background-color: #71e5fb; }
