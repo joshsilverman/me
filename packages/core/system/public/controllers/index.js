@@ -3,14 +3,15 @@
 angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
   function($scope, Global) {
     $scope.global = Global;
-    $scope.sites = {
+    $scope.icons = {
       'photos':{
         'name':'Photos & Places',
-        'image':'/system/assets/img/travel2.jpg'
+        'image':'/system/assets/img/travel2.jpg',
+        'link':'/photos'
       },
       'me':{
         'name':'Me',
-        'image':'/system/assets/img/me2.jpg'
+        'image':'/system/assets/img/me3.jpg'
       },
       'wisr':{
         'name':'Wisr.com',
@@ -27,13 +28,16 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
       'travel':{
         'name':'Travel',
         'image':'/system/assets/img/map.gif'
+      },
+      'jonemo':{
+        'link':'https://www.causes.com/causes/639384-connect-jonemo/about'
       }
     };
 
     $scope.$watch(function () {
-      for (var i = 0; i < $scope.sites.length; i+=1) {
-        if ($scope.sites[i].active) {
-          return $scope.sites[i];
+      for (var i = 0; i < $scope.icons.length; i+=1) {
+        if ($scope.icons[i].active) {
+          return $scope.icons[i];
         }
       }
     }, function (currentSlide, previousSlide) {

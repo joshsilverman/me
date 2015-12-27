@@ -1,19 +1,21 @@
 <section class="welcome container-fluid" data-ng-controller="IndexController">
   <div class="Grid Grid--gutters Grid--flexCells">
     <div class="Grid-cell">
-      <div class="big-icon cyan-bg">
+      <div class="big-icon cyan-bg photos">
         <div class="title">Photos</div>
         <div class="img-container">
-          <img ng-src="{{sites.photos.image}}" />
+          <!-- <a ng-href='{{icons.photos.link}}'> -->
+          <img ng-src="{{icons.photos.image}}" />
+          <!-- </a> -->
         </div>
       </div>
     </div>
     <div class="Grid-cell">
       <div class="big-icon purple-bg">
-        <div class="title">Me</div>
-        <div class="img-container">
-          <img ng-src="{{sites.me.image}}" />
-        </div>
+        <div class="title">Links</div>
+        <!-- <div class="img-container">
+          <img ng-src="{{icons.me.image}}" />
+        </div> -->
       </div>
     </div>
     <div class="Grid-cell">
@@ -21,9 +23,11 @@
         <div class="title">Projects</div>
         <div class="small-icons">
           <div class="col">
-            <div class="small-icon yellow-bg">
+            <a
+              ng-href="{{icons.jonemo.link}}"
+              class="small-icon yellow-bg">
               <div class="small-title">Jonemo</div>
-            </div>
+            </a>
             <div class="small-icon blue-bg">
               <div class="small-title">Wisr</div>
             </div>
@@ -46,15 +50,15 @@
       <div class="big-icon orange-bg">
         <div class="title">Books</div>
         <div class="img-container">
-          <img ng-src="{{sites.books.image}}" />
+          <img ng-src="{{icons.books.image}}" />
         </div>
       </div>
     </div>
     <div class="Grid-cell">
-      <div class="big-icon green-bg">
-        <div class="title">Interests</div>
+      <div class="big-icon green-bg me">
+        <!-- <div class="title">Interests</div> -->
         <div class="img-container">
-          <img ng-src="{{sites.interests.image}}" />
+          <img ng-src="{{icons.me.image}}" />
         </div>
       </div>
     </div>
@@ -62,7 +66,7 @@
       <div class="big-icon red-bg">
         <div class="title">Travel</div>
         <div class="img-container">
-          <img ng-src="{{sites.travel.image}}" />
+          <img ng-src="{{icons.travel.image}}" />
         </div>
       </div>
     </div>
