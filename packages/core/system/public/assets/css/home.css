@@ -96,6 +96,4 @@ a, a:hover:visited:focus {
   transform: rotateX(0deg);
 }
 .big-icon:hover .title { opacity: 0.0 }
-
-/*.photos img { opacity: 1.0 }*/
 .me img { opacity: 1.0 }

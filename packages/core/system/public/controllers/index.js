@@ -28,11 +28,35 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
       'travel':{
         'name':'Travel',
         'image':'/system/assets/img/map.gif'
-      },
-      'jonemo':{
-        'link':'https://www.causes.com/causes/639384-connect-jonemo/about'
       }
     };
+
+    $scope.projects = [
+      [
+        {
+          'name':'Jonemo',
+          'colorClass':'yellow-bg',
+          'link':'https://www.causes.com/causes/639384-connect-jonemo/about'
+        },
+        {
+          'name':'Wisr',
+          'colorClass':'blue-bg',
+          'link':''
+        }
+      ],
+      [
+        {
+          'name':'Timeline',
+          'colorClass':'green-bg',
+          'link':''
+        },
+        {
+          'name':'Analytics',
+          'colorClass':'orange-bg',
+          'link':''
+        }
+      ]
+    ]
 
     $scope.$watch(function () {
       for (var i = 0; i < $scope.icons.length; i+=1) {

@@ -1,8 +1,8 @@
 <section class="welcome container-fluid" data-ng-controller="IndexController">
   <div class="Grid Grid--gutters Grid--flexCells">
     <div class="Grid-cell">
-      <div class="big-icon cyan-bg photos">
-        <div class="title">Photos</div>
+      <div class="big-icon cyan-bg">
+        <div class="title">Code</div>
         <div class="img-container">
           <!-- <a ng-href='{{icons.photos.link}}'> -->
           <img ng-src="{{icons.photos.image}}" />
@@ -12,33 +12,20 @@
     </div>
     <div class="Grid-cell">
       <div class="big-icon purple-bg">
-        <div class="title">Links</div>
-        <!-- <div class="img-container">
-          <img ng-src="{{icons.me.image}}" />
-        </div> -->
+        <div class="title">Projects</div>
       </div>
     </div>
     <div class="Grid-cell">
       <div class="big-icon yellow-bg projects">
-        <div class="title">Projects</div>
+        <div class="title">Links</div>
         <div class="small-icons">
-          <div class="col">
-            <a
-              ng-href="{{icons.jonemo.link}}"
-              class="small-icon yellow-bg">
-              <div class="small-title">Jonemo</div>
+          <div class="col" ng-repeat="col in projects">
+            <a ng-repeat="project in col"
+              ng-href="{{project.link}}"
+              ng-class="project.colorClass"
+              class="small-icon">
+              <div class="small-title">{{project.name}}</div>
             </a>
-            <div class="small-icon blue-bg">
-              <div class="small-title">Wisr</div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="small-icon green-bg">
-              <div class="small-title">Timeline</div>
-            </div>
-            <div class="small-icon orange-bg">
-              <div class="small-title">Analytics</div>
-            </div>
           </div>
         </div>
       </div>
@@ -48,7 +35,7 @@
   <div class="Grid Grid--gutters Grid--flexCells">
     <div class="Grid-cell">
       <div class="big-icon orange-bg">
-        <div class="title">Books</div>
+        <div class="title">About</div>
         <div class="img-container">
           <img ng-src="{{icons.books.image}}" />
         </div>
@@ -56,7 +43,6 @@
     </div>
     <div class="Grid-cell">
       <div class="big-icon green-bg me">
-        <!-- <div class="title">Interests</div> -->
         <div class="img-container">
           <img ng-src="{{icons.me.image}}" />
         </div>
@@ -64,7 +50,7 @@
     </div>
     <div class="Grid-cell">
       <div class="big-icon red-bg">
-        <div class="title">Travel</div>
+        <div class="title">Contact</div>
         <div class="img-container">
           <img ng-src="{{icons.travel.image}}" />
         </div>
