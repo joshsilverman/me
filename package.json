@@ -51,10 +51,10 @@
     "serve-favicon": "latest",
     "shelljs": "latest",
     "swig": "latest",
+    "connect-modrewrite": "latest",
     "view-helpers": "latest"
   },
   "devDependencies": {
-    "connect-modrewrite": "latest",
     "del": "latest",
     "expect.js": "latest",
     "gulp": "latest",
