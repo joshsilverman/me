@@ -23,7 +23,7 @@ a, a:hover:visited:focus {
 /* Small to medium screens */
 @media (max-width: 991px) {
   .Grid, .container, .content { display: block; }
-  body { font-size: 10px; } 
+  body { font-size: 10px; }
 }
 
 .big-icon, .small-icons {
