@@ -56,7 +56,61 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
           'link':''
         }
       ]
-    ]
+    ];
+
+    $scope.links = [
+      [
+        {
+          'name':'LinkedIn',
+          'colorClass':'yellow-bg',
+          'link':''
+        },
+        {
+          'name':'Github',
+          'colorClass':'blue-bg',
+          'link':''
+        }
+      ],
+      [
+        {
+          'name':'Twitter',
+          'colorClass':'green-bg',
+          'link':''
+        },
+        {
+          'name':'GoodReads',
+          'colorClass':'orange-bg',
+          'link':''
+        }
+      ]
+    ];
+
+    $scope.code = [
+      [
+        {
+          'name':'sk-analytics',
+          'colorClass':'yellow-bg',
+          'link':''
+        },
+        {
+          'name':'wisr',
+          'colorClass':'blue-bg',
+          'link':''
+        }
+      ],
+      [
+        {
+          'name':'wisr-ng',
+          'colorClass':'green-bg',
+          'link':''
+        },
+        {
+          'name':'Github',
+          'colorClass':'orange-bg',
+          'link':''
+        }
+      ]
+    ];
 
     $scope.$watch(function () {
       for (var i = 0; i < $scope.icons.length; i+=1) {

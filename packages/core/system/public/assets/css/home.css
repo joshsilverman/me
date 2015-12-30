@@ -31,6 +31,13 @@ a, a:hover:visited:focus {
   display: flex;
 }
 
+.big-icon .small-icons {
+  top:0;
+  left:0;
+  height: 100%;
+  position: absolute;
+}
+
 .big-icon .title, .small-icon .small-title {
   position: absolute;
   bottom: 0px;
@@ -54,7 +61,7 @@ a, a:hover:visited:focus {
   margin: 0.5em;
   padding: 0.5em;
   position: relative;
-  min-height: 4em;
+  min-height: 1em;
 }
 
 .cyan-bg {background-color: #71e5fb; }
@@ -65,14 +72,14 @@ a, a:hover:visited:focus {
 .yellow-bg {background-color: #fffb3b; }
 .red-bg {background-color: #e96239; }
 
-.projects {
-  -webkit-transition: background 0.1s linear;
-  -moz-transition: background 0.1s linear;
-  -ms-transition: background 0.1s linear;
-  -o-transition: background 0.1s linear;
-  transition: background 0.1s linear;
+.small-icons-container {
+  -webkit-transition: background 0.0s linear;
+  -moz-transition: background 0.0s linear;
+  -ms-transition: background 0.0s linear;
+  -o-transition: background 0.0s linear;
+  transition: background 0.0s linear;
 }
-.projects:hover { background-color: transparent; }
+.small-icons-container:hover { background-color: transparent; }
 
 .big-icon img, .small-icons {
   /*max-height: 250px;*/

@@ -1,23 +1,41 @@
 <section class="welcome container-fluid" data-ng-controller="IndexController">
   <div class="Grid Grid--gutters Grid--flexCells">
     <div class="Grid-cell">
-      <div class="big-icon cyan-bg">
+      <div class="big-icon cyan-bg small-icons-container">
         <div class="title">Code</div>
-        <div class="img-container">
-          <!-- <a ng-href='{{icons.photos.link}}'> -->
-          <img ng-src="{{icons.photos.image}}" />
-          <!-- </a> -->
+        <div class="img-container"><img ng-src="/system/assets/img/transparent.png" /></div>
+        <div class="small-icons">
+          <div class="col" ng-repeat="col in code">
+            <a ng-repeat="link in col"
+              ng-href="{{link.link}}"
+              ng-class="link.colorClass"
+              class="small-icon">
+              <div class="small-title">{{link.name}}</div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
     <div class="Grid-cell">
-      <div class="big-icon purple-bg">
-        <div class="title">Projects</div>
+      <div class="big-icon purple-bg small-icons-container">
+        <div class="title">Links</div>
+        <div class="img-container"><img ng-src="/system/assets/img/transparent.png" /></div>
+        <div class="small-icons">
+          <div class="col" ng-repeat="col in links">
+            <a ng-repeat="link in col"
+              ng-href="{{link.link}}"
+              ng-class="link.colorClass"
+              class="small-icon">
+              <div class="small-title">{{link.name}}</div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="Grid-cell">
-      <div class="big-icon yellow-bg projects">
-        <div class="title">Links</div>
+      <div class="big-icon yellow-bg small-icons-container">
+        <div class="title">Projects</div>
+        <div class="img-container"><img ng-src="/system/assets/img/transparent.png" /></div>
         <div class="small-icons">
           <div class="col" ng-repeat="col in projects">
             <a ng-repeat="project in col"
