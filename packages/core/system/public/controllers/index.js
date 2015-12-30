@@ -35,7 +35,7 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
       [
         {
           'name':'sk-analytics',
-          'colorClass':'blue-bg',
+          'colorClass':'cyan-bg',
           'link':''
         },
         {
@@ -89,7 +89,7 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
       [
         {
           'name':'Jonemo',
-          'colorClass':'red-bg',
+          'colorClass':'blue-bg',
           'link':'https://www.causes.com/causes/639384-connect-jonemo/about'
         },
         {

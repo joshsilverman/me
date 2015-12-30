@@ -23,6 +23,7 @@ a, a:hover:visited:focus {
 /* Small to medium screens */
 @media (max-width: 991px) {
   .Grid, .container, .content { display: block; }
+  body { font-size: 10px; }
 }
 
 .big-icon, .small-icons {
@@ -38,11 +39,16 @@ a, a:hover:visited:focus {
   position: absolute;
 }
 
+.hi.title {
+  color:#999;
+  font-size: 4.2em;
+}
+
 .big-icon .title, .small-icon .small-title {
   position: absolute;
   bottom: 0px;
-  font-size: 3.7em;
   margin-left: 12px;
+  font-size: 3.7em;
 }
 
 .small-icon .small-title {
