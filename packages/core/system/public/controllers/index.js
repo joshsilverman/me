@@ -31,27 +31,27 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
       }
     };
 
-    $scope.projects = [
+    $scope.code = [
       [
         {
-          'name':'Jonemo',
-          'colorClass':'yellow-bg',
-          'link':'https://www.causes.com/causes/639384-connect-jonemo/about'
+          'name':'sk-analytics',
+          'colorClass':'blue-bg',
+          'link':''
         },
         {
-          'name':'Wisr',
-          'colorClass':'blue-bg',
+          'name':'wisr',
+          'colorClass':'purple-bg',
           'link':''
         }
       ],
       [
         {
-          'name':'Timeline',
-          'colorClass':'green-bg',
+          'name':'wisr-ng',
+          'colorClass':'red-bg',
           'link':''
         },
         {
-          'name':'Analytics',
+          'name':'Github',
           'colorClass':'orange-bg',
           'link':''
         }
@@ -62,51 +62,51 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
       [
         {
           'name':'LinkedIn',
-          'colorClass':'yellow-bg',
+          'colorClass':'green-bg',
           'link':''
         },
         {
           'name':'Github',
-          'colorClass':'blue-bg',
+          'colorClass':'orange-bg',
           'link':''
         }
       ],
       [
         {
           'name':'Twitter',
-          'colorClass':'green-bg',
+          'colorClass':'cyan-bg',
           'link':''
         },
         {
           'name':'GoodReads',
-          'colorClass':'orange-bg',
+          'colorClass':'purple-bg',
           'link':''
         }
       ]
     ];
 
-    $scope.code = [
+    $scope.projects = [
       [
         {
-          'name':'sk-analytics',
-          'colorClass':'yellow-bg',
-          'link':''
+          'name':'Jonemo',
+          'colorClass':'red-bg',
+          'link':'https://www.causes.com/causes/639384-connect-jonemo/about'
         },
         {
-          'name':'wisr',
-          'colorClass':'blue-bg',
+          'name':'Wisr',
+          'colorClass':'purple-bg',
           'link':''
         }
       ],
       [
         {
-          'name':'wisr-ng',
-          'colorClass':'green-bg',
+          'name':'Timeline',
+          'colorClass':'orange-bg',
           'link':''
         },
         {
-          'name':'Github',
-          'colorClass':'orange-bg',
+          'name':'Analytics',
+          'colorClass':'yellow-bg',
           'link':''
         }
       ]

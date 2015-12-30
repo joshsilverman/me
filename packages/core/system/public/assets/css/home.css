@@ -64,13 +64,13 @@ a, a:hover:visited:focus {
   min-height: 1em;
 }
 
-.cyan-bg {background-color: #71e5fb; }
-.purple-bg {background-color: #b882e5; }
-.blue-bg {background-color: #7770fb; }
-.orange-bg {background-color: #dfaa35; }
-.green-bg {background-color: #97e582; }
-.yellow-bg {background-color: #fffb3b; }
 .red-bg {background-color: #e96239; }
+.orange-bg {background-color: #dfaa35; }
+.yellow-bg {background-color: #fffb3b; }
+.green-bg {background-color: #97e582; }
+.cyan-bg {background-color: #71e5fb; }
+.blue-bg {background-color: #7770fb; }
+.purple-bg {background-color: #b882e5; }
 
 .small-icons-container {
   -webkit-transition: background 0.0s linear;
