@@ -41,7 +41,7 @@ a, a:hover:visited:focus {
 
 .hi.title {
   color:#999;
-  font-size: 4.2em;
+  font-size: 3.7em;
 }
 
 .big-icon .title, .small-icon .small-title {
@@ -68,7 +68,17 @@ a, a:hover:visited:focus {
   padding: 0.5em;
   position: relative;
   min-height: 1em;
+  font-weight: 400;
+  opacity:0.88;
+
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -ms-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
 }
+
+.small-icon:hover { opacity:1.0; }
 
 .red-bg {background-color: #e96239; }
 .orange-bg {background-color: #dfaa35; }
@@ -107,6 +117,7 @@ a, a:hover:visited:focus {
   transition: all 0.2s ease-in-out;
   -webkit-transform: rotateX(0deg); /* Safari */
   transform: rotateX(0deg);
+  cursor:default;
 }
 .big-icon:hover .title { opacity: 0.0 }
 .me img { opacity: 1.0 }

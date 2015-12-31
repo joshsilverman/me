@@ -36,24 +36,24 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
         {
           'name':'sk-analytics',
           'colorClass':'cyan-bg',
-          'link':''
+          'link':'https://github.com/joshsilverman/sk_analytics'
         },
         {
           'name':'wisr',
           'colorClass':'purple-bg',
-          'link':''
+          'link':'https://github.com/joshsilverman/QuizMe'
         }
       ],
       [
         {
           'name':'wisr-ng',
           'colorClass':'red-bg',
-          'link':''
+          'link':'https://github.com/joshsilverman/wisr-ng'
         },
         {
-          'name':'Github',
+          'name':'All',
           'colorClass':'orange-bg',
-          'link':''
+          'link':'https://github.com/joshsilverman'
         }
       ]
     ];
@@ -63,24 +63,24 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
         {
           'name':'LinkedIn',
           'colorClass':'green-bg',
-          'link':''
+          'link':'https://www.linkedin.com/in/joshssilverman'
         },
         {
           'name':'Github',
           'colorClass':'orange-bg',
-          'link':''
+          'link':'https://github.com/joshsilverman'
         }
       ],
       [
         {
-          'name':'Twitter',
+          'name':'',
           'colorClass':'cyan-bg',
           'link':''
         },
         {
           'name':'GoodReads',
           'colorClass':'purple-bg',
-          'link':''
+          'link':'https://www.goodreads.com/review/list/15242620-josh-silverman?shelf=read'
         }
       ]
     ];
@@ -102,12 +102,27 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
         {
           'name':'Timeline',
           'colorClass':'orange-bg',
-          'link':''
+          'link':'http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AliLeS3-noSidFJEdExoNzJWb1ZZcjdRWWJ4VGIxVGc&font=Bevan-PotanoSans&maptype=toner&lang=en&height=650'
         },
         {
-          'name':'Analytics',
+          'name':'',
           'colorClass':'yellow-bg',
           'link':''
+        }
+      ]
+    ];
+
+    $scope.contact = [
+      [
+        {
+          'name':'Email',
+          'colorClass':'purple-bg',
+          'link':'mailto:hello@joshsilverman.net'
+        },
+        {
+          'name':'Tweet',
+          'colorClass':'cyan-bg',
+          'link':'https://twitter.com/silverman'
         }
       ]
     ];

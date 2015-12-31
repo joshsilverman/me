@@ -61,9 +61,9 @@
     <div class="Grid-cell">
       <div class="big-icon yellow-bg">
         <div class="title">About</div>
-        <div class="img-container">
+        <!-- <div class="img-container">
           <img ng-src="{{icons.books.image}}" />
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="Grid-cell">
@@ -74,10 +74,19 @@
       </div>
     </div>
     <div class="Grid-cell">
-      <div class="big-icon red-bg">
+      <div class="big-icon red-bg small-icons-container">
         <div class="title">Contact</div>
-        <div class="img-container">
-          <img ng-src="{{icons.travel.image}}" />
+
+        <div class="img-container"><img ng-src="/system/assets/img/transparent.png" /></div>
+        <div class="small-icons">
+          <div class="col" ng-repeat="col in contact">
+            <a ng-repeat="link in col"
+              ng-href="{{link.link}}"
+              ng-class="link.colorClass"
+              class="small-icon">
+              <div class="small-title">{{link.name}}</div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
