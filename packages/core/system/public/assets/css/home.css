@@ -24,6 +24,7 @@ a, a:hover:visited:focus {
   display: flex;
   display: -webkit-flex;
   align-items: center;
+  -webkit-align-items: center
 }
 
 section[data-ui-view] { width: 100%; }
