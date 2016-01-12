@@ -24,6 +24,8 @@ a, a:hover:visited:focus {
   align-items: center;
 }
 
+section[data-ui-view] { width: 100%; }
+
 /* Small to medium screens */
 @media (max-width: 991px) {
   .Grid, .container, .content { display: block; }
@@ -111,8 +113,8 @@ a, a:hover:visited:focus {
 
 .big-icon img, .small-icons {
   /*max-height: 250px;*/
-  max-width:100%;
-  height: auto;
+  width:100%;
+  /*height: auto;*/
   opacity:0.0;
   filter:alpha(opacity=0);
   cursor: pointer;
