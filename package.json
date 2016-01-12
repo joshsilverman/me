@@ -20,6 +20,7 @@
     "postinstall": "node tools/scripts/postinstall.js"
   },
   "dependencies": {
+    "ms": "latest",
     "assetmanager": "latest",
     "async": "latest",
     "bower": "latest",
@@ -37,7 +38,6 @@
     "meanio": "latest",
     "mongoose": "latest",
     "morgan": "latest",
-    "ms": "latest",
     "nodemailer": "latest",
     "npm": "^2.1.0",
     "passport-facebook": "latest",
