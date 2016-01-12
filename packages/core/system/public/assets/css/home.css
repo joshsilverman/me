@@ -31,7 +31,9 @@ section[data-ui-view] { width: 100%; }
 
 /* Small to medium screens */
 @media (max-width: 991px) {
-  .Grid, .container, .content { display: block; }
+  .Grid, .container, .content { 
+    display: block !important;
+  }
   body { font-size: 12px; }
 }
 
