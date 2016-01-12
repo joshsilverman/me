@@ -1,5 +1,7 @@
-body {
+html, body {
+  /*height:auto;*/
   height:100%;
+  overflow: auto;
   color:#555;
 }
 
@@ -10,7 +12,9 @@ a, a:hover:visited:focus {
 }
 
 .content {
-  height:100%;
+  /*height:auto;*/
+  min-height:100%;
+  overflow: auto;
   margin-top: 0px !important;
   display: flex;
 }
@@ -78,7 +82,9 @@ a, a:hover:visited:focus {
   transition: opacity 0.2s linear;
 }
 
-.small-icon:hover { opacity:1.0; }
+.small-icon:hover, .small-icon.active { 
+  opacity: 1.0; 
+  cursor: pointer; }
 
 .red-bg {background-color: #e96239; }
 .orange-bg {background-color: #dfaa35; }
@@ -95,7 +101,9 @@ a, a:hover:visited:focus {
   -o-transition: background 0.0s linear;
   transition: background 0.0s linear;
 }
-.small-icons-container:hover { background-color: transparent; }
+.small-icons-container:hover, .small-icons-container.active { 
+  background-color: transparent; 
+}
 
 .big-icon img, .small-icons {
   /*max-height: 250px;*/
@@ -107,7 +115,8 @@ a, a:hover:visited:focus {
   transform: rotateX(0deg);
 }
 
-.big-icon:hover img, .big-icon:hover .small-icons {
+.big-icon:hover img, .big-icon:hover .small-icons, 
+.big-icon.active img, .big-icon.active .small-icons {
   visibility:visible;
   opacity:1.0;
   filter:alpha(opacity=100);
@@ -119,5 +128,6 @@ a, a:hover:visited:focus {
   transform: rotateX(0deg);
   cursor:default;
 }
-.big-icon:hover .title { opacity: 0.0 }
+.big-icon:hover .title, .big-icon.active .title { opacity: 0.0 }
+.big-icon.active .small-title { color:transparent; }
 .me img { opacity: 1.0 }

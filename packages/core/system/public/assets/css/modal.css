@@ -1,0 +1,20 @@
+.modal {
+  display: block;
+  margin:1em;
+  top:1em;
+  bottom:1em;
+  left:1em;
+  right:1em;
+  background-color: #eee;
+  padding: 1em;
+  cursor: default;
+  overflow-y: auto;
+}
+
+.modal-title {
+  font-size: 1.6em;
+}
+
+.model p {
+  font-size: 1em;
+}

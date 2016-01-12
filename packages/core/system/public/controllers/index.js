@@ -35,11 +35,15 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
       [
         {
           'name':'sk-analytics',
+          'description': 'A machine learning API that enables using scikit-learn through a python/Django REST interface. The library trains models with cross-validation and stores them in a postgres database.',
+          'group':'code',
           'colorClass':'cyan-bg',
           'link':'https://github.com/joshsilverman/sk_analytics'
         },
         {
           'name':'wisr',
+          'description':'A Ruby on Rails API for sering Angular and iOS apps. Also, contains Twitter and Email engines for a question & answer learning system.',
+          'group':'code',
           'colorClass':'purple-bg',
           'link':'https://github.com/joshsilverman/QuizMe'
         }
@@ -47,11 +51,15 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
       [
         {
           'name':'wisr-ng',
+          'description': 'An AngularJS web frontend for use with the Wisr API. This repo contains the landing page, question creation, and question & answer interface for Wisr.com',
+          'group':'code',
           'colorClass':'red-bg',
           'link':'https://github.com/joshsilverman/wisr-ng'
         },
         {
           'name':'All',
+          'description':'Link to all Github repositories.',
+          'group':'code',
           'colorClass':'orange-bg',
           'link':'https://github.com/joshsilverman'
         }
@@ -62,11 +70,13 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
       [
         {
           'name':'LinkedIn',
+          'group':'links',
           'colorClass':'green-bg',
           'link':'https://www.linkedin.com/in/joshssilverman'
         },
         {
           'name':'Github',
+          'group':'links',
           'colorClass':'orange-bg',
           'link':'https://github.com/joshsilverman'
         }
@@ -74,11 +84,13 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
       [
         {
           'name':'',
+          'group':'links',
           'colorClass':'cyan-bg',
           'link':''
         },
         {
-          'name':'GoodReads',
+          'name':'Books',
+          'group':'links',
           'colorClass':'purple-bg',
           'link':'https://www.goodreads.com/review/list/15242620-josh-silverman?shelf=read'
         }
@@ -89,11 +101,15 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
       [
         {
           'name':'Jonemo',
+          'description': 'Two friends and I built a computer lab at a rural school on the Kenyan/Tanzanian border. We did fund-raising, planning, logistics, installation, and teacher training.',
+          'group':'projects',
           'colorClass':'blue-bg',
           'link':'https://www.causes.com/causes/639384-connect-jonemo/about'
         },
         {
           'name':'Wisr',
+          'description':'Wisr taught anything from Chemistry to Algebra through Twitter/chat/SMS/email. Users learned by answering questions ("If 4x + 1x + 3x = 40, then x = ?") in the communication channel where they were most comfortable. ',
+          'group':'projects',
           'colorClass':'purple-bg',
           'link':''
         }
@@ -101,11 +117,14 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
       [
         {
           'name':'Timeline',
+          'description': 'I have interests in history, innovation and visualization. So, I combined these interests into a visual timeline of the industrial revolution.',
+          'group':'projects',
           'colorClass':'orange-bg',
           'link':'http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AliLeS3-noSidFJEdExoNzJWb1ZZcjdRWWJ4VGIxVGc&font=Bevan-PotanoSans&maptype=toner&lang=en&height=650'
         },
         {
           'name':'',
+          'group':'projects',
           'colorClass':'yellow-bg',
           'link':''
         }
@@ -116,27 +135,32 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
       [
         {
           'name':'Email',
+          'group':'contact',
           'colorClass':'purple-bg',
           'link':'mailto:hello@joshsilverman.net'
         },
         {
           'name':'Tweet',
+          'group':'contact',
           'colorClass':'cyan-bg',
           'link':'https://twitter.com/silverman'
         }
       ]
     ];
 
-    $scope.$watch(function () {
-      for (var i = 0; i < $scope.icons.length; i+=1) {
-        if ($scope.icons[i].active) {
-          return $scope.icons[i];
-        }
-      }
-    }, function (currentSlide, previousSlide) {
-      if (currentSlide !== previousSlide) {
-        console.log('currentSlide:', currentSlide);
+    $scope.$on('assignActive', function(event, item) {
+      $scope.activeItem = null;
+
+      if (item.name) {
+        $scope.activeItem = item;  
       }
     });
+
+
+    $scope.closeModals = function($event) {
+      $event.stopPropagation();
+      console.log('close');
+      $scope.activeItem = null;
+    };
   }
 ]);

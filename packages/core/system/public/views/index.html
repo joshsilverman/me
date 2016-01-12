@@ -7,16 +7,22 @@
 
   <div class="Grid Grid--gutters Grid--flexCells">
     <div class="Grid-cell">
-      <div class="big-icon cyan-bg small-icons-container">
+      <div class="big-icon cyan-bg small-icons-container"
+        ng-class="{active: activeItem.group == 'code'}">
+
         <div class="title">Code</div>
         <div class="img-container"><img ng-src="/system/assets/img/transparent.png" /></div>
         <div class="small-icons">
           <div class="col" ng-repeat="col in code">
-            <a ng-repeat="link in col"
-              ng-href="{{link.link}}"
-              ng-class="link.colorClass"
-              class="small-icon">
-              <div class="small-title">{{link.name}}</div>
+            <a ng-repeat="item in col"
+              ng-click="$emit('assignActive', item)"
+              ng-class="{active: activeItem == item}"
+              class="small-icon {{item.colorClass}}">
+              <div class="small-title">{{item.name}}</div>
+              <modal
+                ng-show="activeItem == item"
+                item="item"
+                close="closeModals" />
             </a>
           </div>
         </div>
@@ -29,27 +35,36 @@
         <div class="img-container"><img ng-src="/system/assets/img/transparent.png" /></div>
         <div class="small-icons">
           <div class="col" ng-repeat="col in links">
-            <a ng-repeat="link in col"
-              ng-href="{{link.link}}"
-              ng-class="link.colorClass"
-              class="small-icon">
-              <div class="small-title">{{link.name}}</div>
+            <a ng-repeat="item in col"
+              ng-href="{{item.link}}"
+              class="small-icon {{item.colorClass}}">
+              <div class="small-title">
+                {{item.name}}
+                <span class="glyphicon glyphicon-new-window" aria-hidden="true" ng-show='item.name'></span>
+              </div>
             </a>
           </div>
         </div>
       </div>
     </div>
     <div class="Grid-cell">
-      <div class="big-icon blue-bg small-icons-container">
+      <div 
+        class="big-icon blue-bg small-icons-container"
+        ng-class="{active: activeItem.group == 'projects'}">
+
         <div class="title">Projects</div>
         <div class="img-container"><img ng-src="/system/assets/img/transparent.png" /></div>
         <div class="small-icons">
           <div class="col" ng-repeat="col in projects">
-            <a ng-repeat="project in col"
-              ng-href="{{project.link}}"
-              ng-class="project.colorClass"
-              class="small-icon">
-              <div class="small-title">{{project.name}}</div>
+            <a ng-repeat="item in col"
+              ng-click="$emit('assignActive', item)"
+              ng-class="{active: activeItem == item}"
+              class="small-icon {{item.colorClass}}">
+              <div class="small-title">{{item.name}}</div>
+              <modal
+                ng-show="activeItem == item"
+                item="item"
+                close="closeModals" />
             </a>
           </div>
         </div>
@@ -61,9 +76,7 @@
     <div class="Grid-cell">
       <div class="big-icon yellow-bg">
         <div class="title">About</div>
-        <!-- <div class="img-container">
-          <img ng-src="{{icons.books.image}}" />
-        </div> -->
+        <div class="img-container"><img ng-src="/system/assets/img/transparent.png" /></div>
       </div>
     </div>
     <div class="Grid-cell">
@@ -90,5 +103,5 @@
         </div>
       </div>
     </div>
-  </div
+  </div>
 </section>

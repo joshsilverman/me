@@ -1,0 +1,11 @@
+<div class="modal">
+  <div class="modal-title">
+    <a ng-href='{{item.link}}'>{{item.name}}</a>
+    <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+
+    {{close}}
+    <span class="close glyphicon glyphicon-remove" aria-hidden="true" ng-click='close()($event)'></span>
+
+  </div>
+  <p>{{item.description}}</p>
+</div>
