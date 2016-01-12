@@ -19,6 +19,9 @@
     "test-e2e": "gulp e2e.test",
     "postinstall": "node tools/scripts/postinstall.js"
   },
+  "engines": {
+    "node": "5.0.0"
+  }
   "dependencies": {
     "assetmanager": "latest",
     "async": "latest",
