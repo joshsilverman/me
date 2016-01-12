@@ -111,7 +111,7 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
           'description':'Wisr taught anything from Chemistry to Algebra through Twitter/chat/SMS/email. Users learned by answering questions ("If 4x + 1x + 3x = 40, then x = ?") in the communication channel where they were most comfortable. ',
           'group':'projects',
           'colorClass':'purple-bg',
-          'link':''
+          'link':'https://github.com/joshsilverman/QuizMe'
         }
       ],
       [
