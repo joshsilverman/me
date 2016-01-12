@@ -43,6 +43,10 @@ a, a:hover:visited:focus {
   position: absolute;
 }
 
+.big-icon .description {
+  margin:1em;
+}
+
 .hi.title {
   color:#999;
   font-size: 3.7em;
@@ -129,5 +133,8 @@ a, a:hover:visited:focus {
   cursor:default;
 }
 .big-icon:hover .title, .big-icon.active .title { opacity: 0.0 }
+.big-icon:hover .title.about { opacity: 1.0 }
 .big-icon.active .small-title { color:transparent; }
 .me img { opacity: 1.0 }
+
+.about.description { position: absolute;}
