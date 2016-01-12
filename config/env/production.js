@@ -28,7 +28,7 @@ module.exports = {
   },
   hostname: 'http://localhost:3000',
   app: {
-    name: 'MEAN - A Modern Stack - Production'
+    name: 'Hi, I\'m Josh'
   },
   logging: {
     format: 'combined'
