@@ -20,13 +20,13 @@
     "postinstall": "node tools/scripts/postinstall.js"
   },
   "dependencies": {
-    "ms": "latest",
     "assetmanager": "latest",
     "async": "latest",
-    "bower": "latest",
     "body-parser": "latest",
+    "bower": "latest",
     "compression": "latest",
     "connect-flash": "latest",
+    "connect-modrewrite": "latest",
     "consolidate": "latest",
     "cookie-parser": "latest",
     "errorhandler": "latest",
@@ -38,6 +38,7 @@
     "meanio": "latest",
     "mongoose": "latest",
     "morgan": "latest",
+    "ms": "^0.7.1",
     "nodemailer": "latest",
     "npm": "^2.1.0",
     "passport-facebook": "latest",
@@ -51,7 +52,6 @@
     "serve-favicon": "latest",
     "shelljs": "latest",
     "swig": "latest",
-    "connect-modrewrite": "latest",
     "view-helpers": "latest"
   },
   "devDependencies": {
