@@ -20,7 +20,7 @@
     "postinstall": "node tools/scripts/postinstall.js"
   },
   "engines": {
-    "node": "5.0.0"
+    "node": "5.4.0"
   },
   "dependencies": {
     "assetmanager": "latest",
