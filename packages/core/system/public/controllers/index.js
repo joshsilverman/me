@@ -159,7 +159,6 @@ angular.module('mean.system').controller('IndexController', ['$scope', 'Global',
 
     $scope.closeModals = function($event) {
       $event.stopPropagation();
-      console.log('close');
       $scope.activeItem = null;
     };
   }
