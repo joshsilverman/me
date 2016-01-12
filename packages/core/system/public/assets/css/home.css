@@ -68,6 +68,7 @@ section[data-ui-view] { width: 100%; }
 .small-icon .small-title {
   font-size: 1.6em;
   margin-left: 6px;
+  margin-bottom: 6px;
 }
 
 .col {
