@@ -24,7 +24,7 @@ if ((cluster.isMaster) &&
 
     console.log('for real!');
     // Count the machine's CPUs
-    var cpuCount = 4; //require('os').cpus().length;
+    var cpuCount = 2; //require('os').cpus().length;
 
     // Create a worker for each CPU
     for (var i = 0; i < cpuCount; i += 1) {
