@@ -59,6 +59,7 @@
     "view-helpers": "^0.1.5"
   },
   "devDependencies": {
+    "buffer-equal-constant-time": "latest",
     "del": "latest",
     "expect.js": "latest",
     "gulp": "latest",
